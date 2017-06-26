@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rate_parent"
+    android:weightSum="10">
+
+    <TextView
+        android:text="Suggested Tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:id="@+id/textView"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RatingBar
+        android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:id="@+id/ratingBar"
+        android:numStars="5"
+        android:rating="1"
+        android:stepSize="0.5"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:text="How would you rate the service?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textStyle="normal|italic"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="18sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="10%"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lbSuggestTipAmount"
+        android:textSize="24sp"
+        android:layout_below="@+id/ratingBar"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_weight="5"
+        android:text="Use"
+        android:id="@+id/btnSubRating"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:textSize="14sp"
+        android:layout_below="@+id/lbSuggestTipAmount"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSubRating"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4" />
+
+</RelativeLayout>

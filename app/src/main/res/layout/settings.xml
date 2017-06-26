@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rbg_currency">
+
+    <TextView
+        android:text="Settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:id="@+id/textView12"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView18"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="1"
+        android:text="       " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_defTip"
+        android:hint="---"
+        android:fontFamily="sans-serif-condensed"
+        android:textAlignment="textStart"
+        android:layout_alignBaseline="@+id/textView13"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_alignLeft="@+id/rbg_currencies"
+        android:layout_alignStart="@+id/rbg_currencies" />
+
+    <RadioGroup
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/rbg_currencies"
+        android:layout_below="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12">
+
+        <RadioButton
+            android:text="€ (euro)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_Euro"
+            android:layout_below="@+id/textView11"
+            android:layout_alignLeft="@+id/rb_dollar"
+            android:layout_alignStart="@+id/rb_dollar"
+            android:layout_weight="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:text="£ (pound)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb_pound"
+            android:layout_below="@+id/rb_Euro"
+            android:layout_alignLeft="@+id/rb_Euro"
+            android:layout_alignStart="@+id/rb_Euro"
+            android:layout_weight="1"
+            android:checked="false" />
+
+        <RadioButton
+            android:text="$ (dollar)"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView11"
+            android:layout_toRightOf="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12"
+            android:id="@+id/rb_dollar"
+            android:layout_weight="1"
+            android:checked="true" />
+
+    </RadioGroup>
+
+    <TextView
+        android:text="Default Currency:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView19"
+        android:textColor="@android:color/background_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/rbg_currencies"
+        android:layout_toLeftOf="@+id/textView18"
+        android:layout_toStartOf="@+id/textView18" />
+
+    <TextView
+        android:text="Default Tip %:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13"
+        android:textColor="@android:color/background_dark"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="24sp"
+        android:layout_below="@+id/rbg_currencies"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_marginTop="45dp" />
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/et_defTip"
+        android:layout_toStartOf="@+id/et_defTip"
+        android:layout_marginBottom="86dp" />
+
+</RelativeLayout>
